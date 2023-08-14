@@ -1,0 +1,3086 @@
+Rangerarbsoft_EstilosCSS * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*---  DISPOSITIVOS SMART  ---*/
+
+/*  *****************************************************************************************
+   -----------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------
+ ********************************************************************************************/
+
+@media screen and (min-width: 1281px) and (max-width: 1900px) {
+  body {
+    width: 100%;
+    height: 80%; /* 740px */
+    background-image: url("Imagenes/InteligenciaArtificial.png");
+  }
+
+  #container-header {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(50, 250, 80);
+    margin: 0;
+    z-index: 250;
+  }
+
+  #btn1 {
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 6%;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-left: 0;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  #btn2 {
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 7%;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    position: relative;
+  }
+
+  .lupa {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .container-uno {
+    width: 30%;
+    height: 20px;
+    margin-top: -2.5%;
+    margin-left: 18%;
+    font-family: arial, sans-serif, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    float: left;
+  }
+
+  .sign {
+    width: 8%;
+    height: 20px;
+    margin-top: 0.5%;
+    margin-left: 52.3%;
+    font-family: arial, sans-serif, monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    text-align: right;
+    float: left;
+  }
+
+  #btn3 {
+    width: 40px;
+    height: 40px;
+    margin-top: -41px;
+    margin-left: 80%;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .registrarse {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 0px;
+    padding-left: 0px;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .sign-up {
+    width: 8%;
+    height: 20px;
+    margin-top: -2.3%;
+    margin-left: 84.5%;
+    font-family: arial, sans-serif, monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    text-align: right;
+    float: left;
+  }
+
+  #btn4 {
+    width: 40px;
+    height: 40px;
+    margin-top: -41px;
+    margin-left: 93%;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .personal {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 0px;
+    padding-left: 0px;
+    /*  border: 0.5px solid rgb(30, 30, 30); */
+    border-radius: 50px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .container-dos {
+    width: 30%;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 46%;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    position: absolute;
+  }
+
+  .img-rangerarbsoft {
+    width: 30%;
+    height: 45%;
+    margin-top: 13%;
+    margin-left: 37%;
+    position: fixed;
+    z-index: 40;
+  }
+  /***********************************************************************/
+
+  /*--Aqui comienza la Ventana de Placeholder --*/
+
+  /*---------------------------------------------------------------------*/
+  .icono-placeholder-image {
+    width: 60%;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: -57%;
+    padding-top: 2px;
+    padding-left: 5%;
+    background-color: rgb(50, 250, 80);
+    color: rgb(10, 10, 250);
+    font-size: 16px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: none; /*block */ /* none */
+    opacity: 0;
+    z-index: 260;
+  }
+
+  @keyframes muestraPlaceholder {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .icono-placeholder-image.activado {
+    display: flex;
+    transform: translate(129%);
+    animation: muestraPlaceholder 370ms ease-in-out both;
+  }
+
+  .icono-placeholder-image:hover {
+    background-color: rgb(70, 70, 70);
+    color: rgb(250, 250, 250);
+  }
+
+  /***********************************************************************/
+  /*--Aqui comienza la Ventana de Enlaces Menú --*/
+  /***********************************************************************/
+  .container-enlaces-menu {
+    width: 20%;
+    height: 92vh;
+    margin-top: 0.2px;
+    margin-left: 0.5px;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 10;
+  }
+
+  @keyframes muestraEnlacesMenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-enlaces-menu.activado {
+    display: flex;
+    transform: translate(0.5px);
+    animation: muestraEnlacesMenu 370ms ease-in-out both;
+  }
+
+  .titulo-uno {
+    display: flex;
+    width: 50%;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 28%;
+    font-family: cursive;
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+  }
+
+  .container-enlaces-menu li {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-top: 17.5%;
+    margin-bottom: 17.5%;
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .container-enlaces-menu li img {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    margin-top: 18.5%;
+    margin-bottom: 18.5%;
+    margin-left: 1%;
+    float: left;
+    position: absolute;
+  }
+
+  .container-enlaces-menu li a {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    margin-top: 18.5%;
+    margin-bottom: 18.5%;
+    margin-left: 25%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-right: 2%;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-around;
+    float: left;
+  }
+
+  .container-enlaces-menu li a:hover {
+    background-color: rgb(120, 120, 120);
+    color: rgb(50, 50, 250);
+  }
+  /*********************************************************************/
+  /*---  Aqui comienza la presentación de Nosotros  ---*/
+  /*-------------------------------------------------------------------*/
+  .container-rangerarbsoft {
+    width: 60%;
+    height: 92vh;
+    margin-top: 0.1%; /* 60% */
+    margin-left: -67.3%; /* 67.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    position: absolute;
+    display: none; /* flexbox */ /* none */
+    opacity: 0;
+    z-index: 50;
+  }
+
+  @keyframes muestraContainerRangerarbsoft {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-rangerarbsoft.activado {
+    display: block;
+    transform: translate(145.8%); /* 145.8% */
+    animation: muestraContainerRangerarbsoft 350ms ease-in-out both;
+  }
+
+  .img-ranger {
+    width: 75%;
+    height: 32vh;
+    margin-top: 1px;
+    margin-left: 10%;
+    align-content: center;
+    align-items: center;
+  }
+
+  .img-nosot {
+    width: 75%;
+    height: 32vh;
+    margin-top: 1px;
+    margin-left: 10%;
+    align-content: center;
+    align-items: center;
+  }
+
+  .descrip-ranger {
+    width: 90%;
+    height: auto;
+    margin-top: 0.5%;
+    margin-left: 4%;
+    padding: auto;
+    background-color: rgb(200, 200, 200);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 50, 225);
+    text-align: justify;
+    text-decoration: none;
+  }
+
+  .descrip-disk {
+    width: 98%;
+    height: auto;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    padding: auto;
+    background-color: rgb(200, 200, 200);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 50, 225);
+    text-align: justify;
+    text-decoration: none;
+  }
+  /*********************************************************************/
+  /*-- Aqui va la ventana de Contactos --*/
+  /*-------------------------------------------------------------------*/
+
+  .contenedor-contacto {
+    width: 50%;
+    height: 92vh;
+    margin-top: 0.1%;
+    margin-left: -67.3%; /* 20.2% */ /* -67.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 60;
+  }
+
+  @keyframes muestraContacto {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-contacto.activado {
+    display: block;
+    transform: translate(175%);
+    animation: muestraContacto 350ms ease-in-out both;
+  }
+
+  .conten-cont {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .contenedor-contacto ul li img {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    float: left;
+    position: relative;
+  }
+
+  .contenedor-contacto ul li a {
+    display: inline-flex;
+    width: 80%;
+    height: 35px;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    float: left;
+    position: absolute;
+  }
+
+  .contenedor-contacto li a:hover {
+    background-color: rgb(70, 70, 70);
+    color: rgb(230, 230, 230);
+  }
+
+  .gmail {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .facebook {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    float: left;
+    cursor: pointer;
+  }
+
+  .instagram {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .linkedin {
+    display: inline;
+    width: 55px;
+    height: 55px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .whtps {
+    display: inline;
+    width: 55px;
+    height: 55px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .youtobe {
+    display: inline;
+    height: 35px;
+    font-size: 18;
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+  /*****************************************************************/
+  /*--   Aqui comienza la ventana de Contenedor de Productos   --*/
+  /*-------------------------------------------------------------*/
+
+  .contenedor-productos {
+    width: 60%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 70;
+  }
+
+  @keyframes contProductos {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-productos.activado {
+    display: block;
+    transform: translate(134%); /* 134% */
+    animation: contProductos 350ms ease-in-out both;
+  }
+
+  .contenedor-productos div {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.5%;
+    margin-bottom: 0.8%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .cont-gastrorest {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-appcontrato {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-apptabaco {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-agroquimica {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 1.5%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-profesionales {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .cont-rangerdisk {
+    display: block;
+    width: 97%;
+    height: 15%;
+    margin-top: 0.8%;
+    margin-bottom: 0.8%;
+    margin-left: 3%;
+    border: 2px solid rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .contenedor-productos img {
+    width: 11%;
+    height: 88%;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+    position: relative;
+  }
+
+  .contenedor-productos img #img_uno {
+    width: 11%;
+    height: 88%;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_dos {
+    width: 11%;
+    height: 88%;
+    margin-top: -42%;
+    margin-bottom: 0.5%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_tres {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_cuatro {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_cinco {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: -35%;
+    float: left;
+  }
+
+  .contenedor-productos img #img_seis {
+    width: 11%;
+    height: 88%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.8%;
+    float: left;
+  }
+
+  .contenedor-productos p {
+    width: 29%;
+    height: 10vh;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .descrip-gastrorest {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-contrato {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-apptabaco {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-agroquimica {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .descrip-profesionales {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .decrip-rangerdisk {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .boton {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-uno {
+    width: 16%;
+    height: 40px;
+    margin-top: -8%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-dos {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-tres {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-cuatro {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-cinco {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  #boton-seis {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(150, 100, 100);
+  }
+
+  .contenedor-productos .boton:hover {
+    background-color: rgb(80, 80, 80);
+    color: rgb(250, 250, 250);
+  }
+
+  .botones {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-one {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-two {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-three {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-four {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-five {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  #btn-six {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 66.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 10, 250);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(100, 240, 100);
+  }
+
+  .contenedor-productos .botones:hover {
+    background-color: rgb(10, 10, 250);
+    color: rgb(100, 240, 100);
+  }
+
+  .boton-video {
+    width: 16%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-uno {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-dos {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-tres {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-cuatro {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-cinco {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  #btn-video-seis {
+    width: 16%;
+    height: 40px;
+    margin-top: -11%;
+    margin-bottom: 0.5%;
+    margin-left: 83.5%;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(150, 100, 100);
+    align-content: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 250);
+  }
+
+  .contenedor-productos .boton-video:hover {
+    background-color: rgb(150, 100, 100);
+    color: rgb(10, 10, 250);
+  }
+  /**************************************************************/
+  /* ------   Aqui comienza el Contenedor Soporte  -------------*/
+  /*------------------------------------------------------------*/
+
+  .contenedor-soporte {
+    width: 60%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 80;
+  }
+
+  @keyframes contSoporte {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-soporte.activado {
+    display: block;
+    transform: translate(134%); /* 134% */
+    animation: contSoporte 350ms ease-in-out both;
+  }
+
+  .contenedor-soporte div {
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    display: block;
+  }
+
+  .contenedor-soporte .container-contacto {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .container-email {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .container-app {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte .container-recup {
+    display: block;
+    width: 98%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .contenedor-soporte img {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    float: left;
+  }
+
+  .contenedor-soporte img #img-uno {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-dos {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-tres {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte img #img-cuatro {
+    width: 15%;
+    height: 90%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 1%;
+  }
+
+  .contenedor-soporte .parr-soporte {
+    width: 50%;
+    height: 20px;
+    margin-top: 2%;
+    padding-bottom: 0.5%;
+    padding-left: 13%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .contenedor-soporte #parr-uno {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-dos {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-tres {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte #parr-cuatro {
+    width: 30%;
+    height: 30px;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(200, 50, 100);
+    flex-direction: column;
+    text-decoration: none;
+    float: left;
+  }
+
+  .contenedor-soporte .parr-definicion {
+    width: 70%;
+    height: 30px;
+    margin-top: 4%;
+    margin-bottom: 0.5%;
+    margin-left: 45%;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(40, 40 40);
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  /**************************************************************/
+  /* ------   Aqui comienza el Contenedor Garantía  -------*/
+  /*------------------------------------------------------------*/
+
+  .container-garantia {
+    width: 79.8%;
+    height: 350vh;
+    margin-top: 0.1%; /* -1.5% */
+    margin-left: -60.3%; /* 20.2% */ /* -60.3% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    position: relative;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 90;
+  }
+
+  @keyframes contGarantia {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-garantia.activado {
+    display: block;
+    transform: translate(100.8%); /* 145.8% */ /* 1.5% */
+    animation: contGarantia 350ms ease-in-out both;
+  }
+
+  h1 {
+    width: 60%;
+    height: 20px;
+    padding-top: 3%;
+    margin-left: 20%;
+    font-family: arial, sann serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(60, 60, 60);
+    text-align: center;
+    align-content: center;
+  }
+
+  .parr-garantia {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: absolute;
+    justify-content: space-between;
+    font-family: arial, sann serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    text-align: justify;
+  }
+
+  .autor {
+    width: 50%;
+    height: 20px;
+    margin-top: 340vh; /* 348vh */
+    margin-left: 50%;
+    font-family: arial, sann serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(60, 60, 60);
+  }
+  /**************************************************************/
+  /* ------   Aqui comienza el Contenedor Cotización  -------*/
+  /*------------------------------------------------------------*/
+
+  .container-cotizacion {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 95;
+  }
+
+  @keyframes contCotizacion {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-cotizacion.activado {
+    display: block;
+    transform: translate(162.8%); /* 145.8% */ /* 134% */ /* 163.8% */
+    animation: contCotizacion 350ms ease-in-out both;
+  }
+
+  .titulo-cotizacion {
+    width: 80%;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: rgb(200, 50, 100);
+    color: rgb(10, 10, 250);
+    border-radius: 10px;
+  }
+
+  .container-dolar {
+    width: 30%;
+    height: 45px;
+    margin-top: 20%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+    float: left;
+  }
+
+  .cont-dolar {
+    width: 80%;
+    height: 35px;
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 18px;
+    align-content: center;
+    align-content: center;
+  }
+
+  .parr-dolar {
+    width: 150%;
+    height: 45px;
+    margin-top: -20%;
+    margin-left: 125%;
+    padding-top: 9%;
+    padding-left: 35%;
+    color: rgb(10, 10, 250);
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+
+  .container-euro {
+    width: 30%;
+    height: 45px;
+    margin-top: 65%;
+    margin-left: 5%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .cont-euro {
+    width: 80%;
+    height: 35px;
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 18px;
+    align-content: center;
+    align-content: center;
+  }
+
+  .parr-euro {
+    width: 150%;
+    height: 45px;
+    margin-top: -20%;
+    margin-left: 125%;
+    padding-top: 9%;
+    padding-left: 35%;
+    color: rgb(10, 10, 250);
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 700;
+    float: left;
+  }
+  /**************************************************************/
+  /* ----   Aqui comienza el Contenedor GastroRest  -------*/
+  /*------------------------------------------------------------*/
+  .contenedor-gastrorest {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contGastrorest {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-gastrorest.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contGastrorest 350ms ease-in-out both;
+  }
+
+  .contenedor-gastrorest .contenedor-linea-uno {
+    width: 95%;
+    height: 79vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .gastrorest {
+    width: 90%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4.5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-gastrorest {
+    width: 95%;
+    height: 35vh;
+    margin-top: 50%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-dos {
+    width: 95%;
+    height: 10vh;
+    margin-top: 121%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    float: left;
+  }
+
+  .costo-gastrorest {
+    width: 45%;
+    height: 3vh;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+  }
+
+  .container-importe {
+    width: 30%;
+    height: 50%;
+    margin-top: -8%;
+    margin-bottom: 2%;
+    margin-left: 60%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+    float: left;
+  }
+
+  .importe-gastrorest {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /******************************************************************/
+  /*----   Aqui comienza el Contenedor AppContratoAlquiler  ------*/
+  /*----------------------------------------------------------------*/
+
+  .contenedor-appcontrato-alquiler {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contAppContrato {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-appcontrato-alquiler.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contAppContrato 350ms ease-in-out both;
+  }
+
+  .contenedor-appcontrato-alquiler .container-linea-dos {
+    width: 95%;
+    height: 75vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .appcontrato {
+    width: 90%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-appcontrato {
+    width: 95%;
+    height: 35vh;
+    margin-top: 60%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    font-family: arial san serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-tres {
+    width: 95%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-appcontrato {
+    width: 62%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .container-importe-appcontrato {
+    width: 30%;
+    height: 50%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    margin-left: 65%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-appcontrato {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /**************************************************************/
+  /* ----   Aqui comienza el Contenedor AppTABACO  -------*/
+  /*------------------------------------------------------------*/
+
+  .contenedor-app-tabaco {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contAppTabaco {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-app-tabaco.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contAppTabaco 350ms ease-in-out both;
+  }
+
+  .contenedor-app-tabaco .container-linea-dos {
+    width: 95%;
+    height: 76vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .apptabaco {
+    width: 90%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-app-tabaco {
+    width: 95%;
+    height: 35vh;
+    margin-top: 50%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-tres {
+    width: 95%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-app-tabaco {
+    width: 62%;
+    height: 3vh;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .container-importe-app-tabaco {
+    width: 30%;
+    height: 50%;
+    margin-top: -8%;
+    margin-bottom: 2%;
+    margin-left: 65%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-app-tabaco {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /*******************************************************************/
+  /*----   Aqui comienza el Contenedor AgroQuimicaSolutions  -----*/
+  /*-----------------------------------------------------------------*/
+
+  .contenedor-agroquimica {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contAgroQuimica {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-agroquimica.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contAgroQuimica 350ms ease-in-out both;
+  }
+
+  .contenedor-agroquimica .container-linea-dos {
+    width: 95%;
+    height: 76vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .agroquimica {
+    width: 90%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-agroquimica {
+    width: 95%;
+    height: 35vh;
+    margin-top: 50%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-tres {
+    width: 95%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-agroquimica {
+    width: 62%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .container-importe-agroquimica {
+    width: 30%;
+    height: 50%;
+    margin-top: -6%;
+    margin-bottom: 2%;
+    margin-left: 68%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-agroquimica {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  /**************************************************************************/
+  /* ----   Aqui comienza el Contenedor Profesionales-Sianca-Valley  -------*/
+  /*------------------------------------------------------------------------*/
+
+  .contenedor-profesionales {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contProfesionales {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-profesionales.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contProfesionales 350ms ease-in-out both;
+  }
+
+  .contenedor-profesionales .container-linea-dos {
+    width: 95%;
+    height: 76vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .profesionales {
+    width: 90%;
+    height: 28vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-profesionales {
+    width: 95%;
+    height: 35vh;
+    margin-top: 48%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-tres {
+    width: 95%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-profesionales {
+    width: 62%;
+    height: 3vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .container-importe-profesionales {
+    width: 30%;
+    height: 50%;
+    margin-top: -6%;
+    margin-bottom: 2%;
+    margin-left: 68%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-profesionales {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  /****************************************************************/
+  /*-----  Aqui comienza el Contenedor RangerarbsoftDisk  ------*/
+  /*--------------------------------------------------------------*/
+  .contenedor-rangerarbsoftdisk {
+    width: 34%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 100;
+  }
+
+  @keyframes contRangerarbsoftdisk {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .contenedor-rangerarbsoftdisk.activado {
+    display: block;
+    transform: translate(163.8%); /* 145.8% */ /* 1.5% */
+    animation: contRangerarbsoftdisk 350ms ease-in-out both;
+  }
+
+  .contenedor-rangerarbsoftdisk .container-linea-dos {
+    width: 95%;
+    height: 76vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .rangerarbsoftdisk {
+    width: 90%;
+    height: 28vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .descripcion-rangerarbsoftdisk {
+    width: 95%;
+    height: 35vh;
+    margin-top: 47%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+  }
+
+  .container-linea-tres {
+    width: 95%;
+    height: 10vh;
+    margin-top: 118%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 10px;
+  }
+
+  .costo-rangerarbsoftdisk {
+    width: 62%;
+    height: 3vh;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .container-importe-rangerarbsoftdisk {
+    width: 30%;
+    height: 50%;
+    margin-top: -8%;
+    margin-bottom: 2%;
+    margin-left: 68%;
+    border: 2px solid rgb(200, 50, 100);
+    border-radius: 5px;
+  }
+
+  .importe-rangerarbsoftdisk {
+    width: 35%;
+    height: 3vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    font-family: arial san serif;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  /***************************************************************/
+  /* ----   Aqui comienza contenedor de Video GastroRest -----*/
+  /*-------------------------------------------------------------*/
+  .container-video-gastrorest {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoGastroRest {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-gastrorest.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoGastroRest 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-uno {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /************************************************************************/
+  /* ----   Aqui comienza contenedor de Video AppContratoAlquiler  -----*/
+  /*----------------------------------------------------------------------*/
+  .container-video-appcontrato {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoAppcontrato {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-appcontrato.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoAppcontrato 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-dos {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /**************************************************************/
+  /* ----   Aqui comienza contenedor de Video AppTABACO -----*/
+  /*------------------------------------------------------------*/
+
+  .container-video-apptabaco {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoAppTabaco {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-apptabaco.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoAppTabaco 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-tres {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /***********************************************************************/
+  /* ----   Aqui comienza contenedor de Video AgroQuimicaSolutions  -----*/
+  /*---------------------------------------------------------------------*/
+  .container-video-agroquimica {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoAgroQuimica {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-agroquimica.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoAgroQuimica 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-cuatro {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /********************************************************************************/
+  /* ----   Aqui comienza contenedor de Video Profesionales-Sianca-Valley  -------*/
+  /*------------------------------------------------------------------------------*/
+  .container-video-profesionales {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoProfesionales {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-profesionales.activado {
+    display: block;
+    transform: translate(113%); /* 145.8% */ /* 1.5% */
+    animation: contVideoProfesionales 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-cinco {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /*********************************************************************/
+  /* ----   Aqui comienza contenedor de Video Rangerarbsoftdisk ----*/
+  /*-------------------------------------------------------------------*/
+
+  .container-video-rangerarbsoftdisk {
+    width: 49%;
+    height: 91.5%;
+    margin-top: 0.1%;
+    margin-left: -35.2%; /* 20.2% */ /* -35.2% */
+    border-radius: 15px;
+    background-color: rgb(130, 130, 130);
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: absolute;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 110;
+  }
+
+  @keyframes contVideoRangerarbsoftDisk {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-video-rangerarbsoftdisk.activado {
+    display: block;
+    transform: translate(113%); /* 113% */
+    animation: contVideoRangerarbsoftDisk 350ms ease-in-out both;
+  }
+
+  .container-linea-uno {
+    width: 97%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border: 1px solid rgb(200, 50, 100);
+    border-radius: 15px;
+    position: absolute;
+  }
+
+  .titulo-video-seis {
+    width: 70%;
+    height: 30px;
+    margin-top: -1%;
+    margin-left: 12%;
+    font-family: arial san serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(200, 50, 100);
+  }
+
+  video {
+    width: 96.8%;
+    height: 99.5%;
+    margin-top: -7%;
+    margin-left: 2%;
+  }
+  /**************************************************************/
+  /* Aqui comienza el Formulario de Suscripción */
+  /*------------------------------------------------------------*/
+  .container-form-suscrip {
+    width: 38.9%; /* 38.9% */
+    height: 91.5%;
+    margin-top: 0.1%; /* 0.8% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(70, 70, 70);
+    position: absolute; /* relative */
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 120;
+  }
+
+  @keyframes muestraFormSuscripcion {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container-form-suscrip.activado {
+    display: block; /* block */
+    transform: translate(185%); /* 185% */
+    animation: muestraFormSuscripcion 350ms ease-in-out both;
+  }
+
+  .form-reg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    margin-left: 0.2%;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .registro-reg {
+    width: 75%;
+    height: 30px;
+    margin-top: 3%; /* 3% */
+    padding-top: 3px;
+    padding-left: 24.8%;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    display: flex; /* flexbox */
+  }
+
+  input {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0 auto;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #producto {
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
+
+  #nombre {
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  #apellido {
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  #dni {
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #domicilio {
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #telefono {
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #email {
+    text-transform: lowercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #pass {
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #registrar {
+    display: flex;
+    width: 55%;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    padding-top: 2px;
+    padding-left: 20%;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  /*--------------------------------------------------*/
+  /* Aqui comienza el Formulario de validación */
+  /*---------------------------------------------------*/
+  .form-validar {
+    width: 38.9%; /* 38.9% */
+    height: 80%;
+    margin-top: 0.1%; /* -0.7% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    padding-left: 1px;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    float: left;
+    display: none; /* flex */
+    opacity: 0;
+    z-index: 130;
+  }
+
+  @keyframes muestraFormValidar {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .form-validar.activado {
+    display: block;
+    transform: translate(185%);
+    animation: muestraFormValidar 350ms ease-in-out both;
+  }
+
+  .validar-password {
+    display: flexbox;
+    width: 240px;
+    height: 35px;
+    margin-top: 5%;
+    margin-left: 27%;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .container-input4 input {
+    display: flexbox;
+    width: 80%;
+    height: 42px;
+    margin-top: 4%;
+    margin-left: 4.5%;
+    margin-bottom: 3%;
+  }
+
+  #email1 {
+    display: flex;
+    width: 90%;
+    height: 42px;
+    margin-top: 4%;
+    margin-left: 4.5%;
+    margin-bottom: 4%;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: lowercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #pass1 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 4%;
+    margin-left: 4.5%;
+    margin-bottom: 4%;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #validar {
+    display: block;
+    width: 50%;
+    height: 43px;
+    margin-top: 8%;
+    margin-left: 25%;
+    margin-bottom: 8%;
+    border-radius: 50px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  #validar-pass {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    background: rgb(40, 40, 40);
+    color: rgb(0, 132, 255);
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+  /*----------------------------------------------------------*/
+  /* Aqui comienza el Formulario de enviar Código */
+  /*---------------------------------------------------------*/
+  .form-enviar-codigo {
+    width: 38.9%; /* 38.9% */
+    height: 80%;
+    margin-top: 0.1%; /* -1.6% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    padding-top: 10px;
+    padding-left: 5px;
+    float: left;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 10%;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    padding-top: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* absolute */
+    float: left;
+    display: none; /* flex */
+    opacity: 0;
+    z-index: 140;
+  }
+
+  @keyframes muestraFormEnviarCodigo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .form-enviar-codigo.activado {
+    display: block;
+    transform: translate(185%);
+    animation: muestraFormEnviarCodigo 350ms ease-in-out both;
+  }
+
+  #validar-codigo {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 26%;
+    margin-bottom: 8%;
+    padding-top: 10px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+
+  .form-enviar-codigo p {
+    display: flexbox;
+    width: 70%;
+    font-size: 21px;
+    margin: 10px auto;
+    color: rgb(100, 258, 100);
+    text-align: justify;
+    margin-bottom: 10%;
+    font-weight: 600;
+  }
+
+  #val-cod {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #enviar-codigo {
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 8%;
+    margin-left: 26%;
+    margin-bottom: 8%;
+    border-radius: 50px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+  /*------------------------------------------------------------*/
+  /* Aqui comienza el Formulario de Validar - Recuperación */
+  /*------------------------------------------------------------*/
+
+  .form-recup-password {
+    width: 38.9%; /* 38.9% */
+    height: 80%;
+    margin-top: 0.1%; /* -1.6% */
+    margin-left: -40%; /* 20.2% */ /* -40% */
+    padding-left: 1px;
+    border: 3px solid rgb(100, 258, 100);
+    border-radius: 40px;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    float: left;
+    display: none; /* flex */ /* none */
+    opacity: 0;
+    z-index: 150;
+  }
+
+  @keyframes muestraFormRecuperarPass {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .form-recup-password.activado {
+    display: block;
+    transform: translate(185%); /* 185% */
+    animation: muestraFormRecuperarPass 350ms ease-in-out both;
+  }
+
+  .recuperar-password {
+    display: flexbox;
+    width: 70%;
+    height: 35px;
+    margin-top: 8%;
+    margin-left: 16%;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    float: left;
+  }
+
+  .container-input4 input {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    float: left;
+  }
+
+  #email-uno {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 5%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: lowercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #recup-pass1 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 5%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #recup-pass2 {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    margin-bottom: 5%;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 50px;
+    background: rgb(100, 258, 100);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #recup-validar {
+    display: block;
+    width: 150px;
+    height: 43px;
+    margin-top: 10%;
+    margin-left: 36%;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    background: rgb(8, 8, 8);
+    color: rgb(0, 132, 255);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
