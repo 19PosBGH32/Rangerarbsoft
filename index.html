@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!------------------ Aqui comienza el Head ------------------>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RANGERARBSoft" />
+    <meta
+      name="description"
+      content="Desarrollo de Software para Gestión de Negocios, Agricultura e Inmobiliaria"
+    />
+    <meta
+      name="keywords"
+      content="AppPROFESIONALES Sianca Valley, AppTABACO, AppGastronomía"
+    />
+    <meta name="copyrigth" content="copyrigth o www.rangerarbsoft.com" />
+    <link
+      rel="icon"
+      type="ProfesionalesIco.ico"
+      href="C:\Users\54351\Desktop\RangerarbsoftDisk\Imagenes/LogoRangerarbsoft_ico.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rangerarbsoft</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <!------------------ Aqui comienza el Body ------------------>
+  <body>
+    <header id="container-header">
+      <!--Aqui comienza el logo de inicio (Home) -->
+      <button id="btn1" type="button">
+        <img class="logo" src="Imagenes/LogoRangerarbsoft_45.png" />
+      </button>
+      <!--Aqui termina el logo de inicio (Home) -->
+      <!--Aqui comienza el buscador inteligente de inicio (Pleceholder) -->
+      <button id="btn2" type="button">
+        <img class="lupa" src="Imagenes/mail_search.png" />
+      </button>
+      <!--Aqui comienza los títulos de inicio (Home) -->
+      <h1 class="container-uno">Rangerarbsoft</h1>
+      <p class="sign">Inicio Sesión</p>
+      <!-- Aqui comienza el buscador de cuenta Registrarse  -->
+      <button id="btn3" type="button">
+        <img class="registrarse" src="Imagenes/user-32.png" />
+      </button>
+      <p class="sign-up">Registrarse</p>
+      <!-- Aqui comienza el buscador de cuenta personal  -->
+      <button id="btn4" type="button">
+        <img class="personal" src="Imagenes/users.ico" />
+      </button>
+      <!--Aqui termina el buscador de cuenta personal  -->
+      <h3 class="container-dos">General Gùemes (Salta)</h3>
+      <!--Aqui termina los titulos de inicio (Home)-->
+    </header>
+    <!--Aqui la Imagen Principal en el Navegador -->
+    <img class="img-rangerarbsoft" src="Imagenes/LogoRangerarbsoft_450.png" />
+
+    <!--Aqui los botones por categoria de inicio (Home) -->
+    <nav>
+      <input
+        type="text"
+        class="icono-placeholder-image"
+        name="apellnom"
+        placeholder="Buscar por Apellido y Nombre"
+      />
+    </nav>
+    <!------------------------------------------------->
+    <!-- Aqui comienza ventana enlaces-menú -->
+    <!------------------------------------------------->
+    <div class="container-enlaces-menu">
+      <ul class="enlac-menu">
+        <h3 id="titulo1" class="titulo-uno">RANGERARBSoft</h3>
+        <br />
+        <li>
+          <img src="Imagenes\013-post-office.png" class="icon1" /><a
+            class="item-uno"
+            onclick="mostrarRangerarbsoft();"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <li>
+          <img
+            src="Imagenes\contact, book, contacts, notebook@1x.png"
+            class="icon2"
+          /><a class="item-dos" onclick="mostrarContacto();" href="#"
+            >Contacto</a
+          >
+        </li>
+        <li>
+          <img src="Imagenes\shopping-cart-32.png" class="icon3" /><a
+            class="item-tres"
+            onclick="mostrarProductos();"
+            href="#"
+            >Productos</a
+          >
+        </li>
+        <li>
+          <img src="Imagenes\support32.png" class="icon4" /><a
+            class="item-cuatro"
+            onclick="mostrarSoporte();"
+            href="#"
+            >Soporte</a
+          >
+        </li>
+        <li>
+          <img src="Imagenes\document-32.png" class="icon5" /><a
+            class="item-cinco"
+            onclick="mostrarGarantia();"
+            href="#"
+            >Garantìa</a
+          >
+        </li>
+        <li>
+          <img
+            src="Imagenes\bank, finance, dollar, location, pointer@1x.png"
+            class="icon6"
+          /><a class="item-seis" onclick="mostrarCotizacion();" href="#"
+            >Dolar - Euro</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!--------------------------------------->
+    <!--Aqui comienza contenedor de Nosotros -->
+    <!----------------------------------------->
+    <div class="container-rangerarbsoft">
+      <img class="img-ranger" src="Imagenes/RANGERARBSoftwareLabIcono.jpg" />
+      <img class="img-nosot" src="Imagenes/RANGERARBSOFTPrincipal.png" />
+      <p class="descrip-ranger">
+        "-Desarrollo de Software para Gestión de Negocios, Agricultura e
+        Inmobiliaria -"
+      </p>
+      <p class="descrip-disk">
+        "-Recuperación de Archivos de Imágenes, Documentos(.docs, .txt, .svg),
+        Aplicaciones varias desde Unidades de Almacenamiento (HDD, SSD, DVD,
+        USB) en Unidades dañadas y corrompidas (no-rotas fisicamente) -"
+      </p>
+    </div>
+    <!----------------------------------------->
+    <!--Aqui comienza contenedor de contacto -->
+    <!----------------------------------------->
+    <div class="contenedor-contacto">
+      <ul class="conten-cont">
+        <li>
+          <img class="contacto" id="" src="Imagenes/Apps-Gmail-B-icon.png" /><a
+            class="gmail"
+            href="https://www.google.com/intl/es/account/about/"
+            aria-label="Link to Gmail"
+            >rangerarbsoftwarelab@gmail.com</a
+          >
+        </li>
+        <li>
+          <img class="contacto" src="Imagenes/facebook-32.png" /><a
+            class="facebook"
+            href="https://www.facebook.com/profile.php?id=100094598863181t"
+            aria-label="Link to Facebook"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <img class="contacto" id="" src="Imagenes/instagram.png" /><a
+            class="instagram"
+            href="https://www.instagram.com/rangerarbsoft"
+            aria-label="Link to Instagram"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <img class="contacto" id="" src="Imagenes/linkedin-icon.png" /><a
+            class="linkedin"
+            href="https://www.linkedin.com/in/alberto-ram%C3%B3n-beccari-0b14a0179/"
+            aria-label="Link to Linkedin"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <img class="contacto" id="" src="Imagenes/Whattapps.png" /><a
+            class="whtps"
+            href="#"
+            >+5493518199585</a
+          >
+        </li>
+        <li>
+          <img class="contacto" id="" src="Imagenes/youtube-32.png" /><a
+            class="youtobe"
+            href="https://www.youtube.com/watch?v=qdrtU-HzIJQ"
+            aria-label="Link to Youtobe"
+            >Youtobe</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!----------------------------------------->
+    <!--Aqui comienza contenedor de Productos -->
+    <!----------------------------------------->
+
+    <div class="contenedor-productos">
+      <div class="cont-gastrorest">
+        <img
+          class="productos"
+          id="img_uno"
+          src="Imagenes\SplashGastroRest.png"
+        />
+        <p class="descrip-gastrorest">GastroRest</p>
+        <button
+          class="boton"
+          id="btn-uno"
+          onclick="mostrarGastroRest()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-one" type="button">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-uno"
+          onclick="mostrarVideoGastroRest()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+      <div class="cont-appcontrato">
+        <img
+          class="productos"
+          id="img_dos"
+          src="Imagenes\ContratoAlquiler150.jpg"
+        />
+        <p class="descrip-contrato">AppContratoAlquiler</p>
+        <button
+          class="boton"
+          id="btn-dos"
+          onclick="mostrarContratoAlquiler()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-two" type="button">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-dos"
+          onclick="mostrarVideoAppcontrato()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+      <div class="cont-apptabaco">
+        <img class="productos" id="img_tres" src="Imagenes\AppTABACO.png" />
+        <p class="descrip-apptabaco">AppTABACO</p>
+        <button
+          class="boton"
+          id="btn-tres"
+          onclick="mostrarAppTabaco()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-three" type="button">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-tres"
+          onclick="mostrarVideoAppTabaco()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+      <div class="cont-agroquimica">
+        <img
+          class="productos"
+          id="img_cuatro"
+          src="Imagenes\LogotipoAroQuimicaSolutions.png"
+        />
+        <p class="descrip-agroquimica">AgroQuímicaSolutions</p>
+        <button
+          class="boton"
+          id="btn-cuatro"
+          onclick="mostrarAgroquimica()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-four" type="button">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-cuatro"
+          onclick="mostrarVideoAgroQuimica()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+      <div class="cont-profesionales">
+        <img class="productos" id="img_cinco" src="Imagenes\SublimeText.png" />
+        <p class="descrip-profesionales">Profesionales-Sianca-Valley</p>
+        <button
+          class="boton"
+          id="btn-cinco"
+          onclick="mostrarProfesionales()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-five" type="button">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-cinco"
+          onclick="mostrarVideoProfesionales()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+      <div class="cont-rangerdisk">
+        <img class="productos" id="img_seis" src="Imagenes\HDD_SSD.jpg" />
+        <p class="decrip-rangerdisk">RangerarbsoftDisk</p>
+        <button
+          class="boton"
+          id="btn-seis"
+          onclick="mostrarRangerDisk()"
+          type=""
+          aria-label="content expanded"
+        >
+          Consultar</button
+        ><button class="botones" id="btn-six">Comprar</button
+        ><button
+          class="boton-video"
+          id="btn-video-seis"
+          onclick="mostrarVideoRangerarbDisk()"
+          type="button"
+          aria-label="content expanded"
+        >
+          Video
+        </button>
+      </div>
+    </div>
+    <!----------------------------------------->
+    <!--Aqui comienza contenedor de Soporte -->
+    <!----------------------------------------->
+
+    <div class="contenedor-soporte">
+      <div class="container-contacto">
+        <img
+          class="soporte"
+          id="img-uno"
+          src="Imagenes/contact, book, contacts, notebook@1x.png"
+          alt=""
+        />
+        <p class="parr-soporte" id="parr-uno">Contacto - Telefónico</p>
+        <p class="parr-definicion" id="parr-one">- Whttps: +549-3518199585 -</p>
+      </div>
+      <div class="container-email">
+        <img
+          class="soporte"
+          id="img-dos"
+          src="Imagenes/email-document-32.png"
+          alt=""
+        />
+        <p class="parr-soporte" id="parr-dos">Contacto - Email</p>
+        <p class="parr-definicion">- rangerarbsoftwarelab@gmail.com -</p>
+      </div>
+      <div class="container-app">
+        <img
+          class="soporte"
+          id="img-tres"
+          src="Imagenes/computer-icon.png"
+          alt=""
+        />
+        <p class="parr-soporte" id="parr-tres">Consulta - Aplicaciones</p>
+        <p class="parr-definicion">- Whttps: +549 3518199585 -</p>
+      </div>
+      <div class="container-recup">
+        <img
+          class="soporte"
+          id="img-cuatro"
+          src="Imagenes/nuclear, danger, factory, industry@1x.png"
+          alt=""
+        />
+        <p class="parr-soporte" id="parr-cuatro">
+          Consulta - Recuperación Archivos
+        </p>
+        <p class="parr-definicion">- Whttps: +549 3518199585 -</p>
+      </div>
+    </div>
+    <!----------------------------------------->
+    <!--Aqui comienza contenedor de Garantía -->
+    <!----------------------------------------->
+
+    <div class="container-garantia">
+      <h1>Garantía de los Productos</h1>
+      <p class="parr-garantia">
+        SUPLEMENTO AL CONTRATO DE SERVICIOS DE RANGERARB SoftwareLab SERVICIO Y
+        SOFTWARE DE APLICACION EN LA SUSCRIPCIÓN DE CONSUMIDOR de Aplicaciones
+        Última actualización: Diciembre 2020 Gracias por elegir la Suscripción
+        de consumidor de Aplicaciones de Rangerarbsoft. Su utilización del
+        software y el servicio de Aplicaciones incluidos en la suscripción a
+        Aplicaciones (el “servicio o software”) está regida por los términos y
+        condiciones del Contrato de servicios de RANGERARB SoftwareLab que usted
+        aceptó al registrar una Cuenta en Rangerarbsoft (enlace a continuación),
+        así como por los términos y condiciones de este Suplemento (en conjunto,
+        el “Contrato”), que junto con otros términos contenidos en los enlaces
+        web señalados en este Suplemento (si los hubiera) constituyen un
+        contrato entre usted y RANGERARB SoftwareLab (o, en función de donde
+        resida, una de sus filiales). Es posible que se le presente una licencia
+        por separado al instalar o usar el servicio o software en un
+        dispositivo, y dicha licencia independiente regirá en la medida en que
+        exista alguna contradicción con el Contrato. Es esencial leer el
+        Suplemento completo, incluso los términos relacionados que puedan
+        existir, porque todos ellos son importantes y constituyen el contrato
+        que se le aplicará a usted. Puede revisar los términos relacionados
+        copiando el vínculo correspondiente en una ventana del explorador. En el
+        supuesto de contradicción entre el Contrato de servicios de RANGERARB
+        SoftwareLab y este Suplemento, este último regirá en cuanto al uso que
+        usted haga del servicio o sofware. Al aceptar el presente Suplemento o
+        al utilizar el servicio y el software, usted acepta todos estos términos
+        y brinda su consentimiento para la transmisión de determinada
+        información durante la activación y durante el uso que usted haga del
+        software conforme a la declaración de privacidad de RANGERARB
+        SoftwareLab que se describe en el Contrato de servicios de RANGERARB
+        SoftwareLab y cuyo enlace figura más abajo en este Suplemento. Si no
+        acepta o cumple estos términos, no podrá utilizar los servicios, el
+        software ni sus funciones. 1. Instalación y derechos de uso; activación.
+        a. Licencia; número de usuarios y dispositivos registrados; otros
+        requisitos. El servicio o software se cede bajo licencia y no es objeto
+        de venta. Siempre y cuando usted cumpla todos los términos del Contrato,
+        nosotros le concedemos el derecho a instalar y ejecutar copias del
+        servicio o software en dispositivos que usted posea y controle, así como
+        para su uso personal, de la manera siguiente: (i) Suscripción a
+        Aplicaciones. Para un uso por parte de su persona más tres (3)
+        dispositivos adicionales de su cuenta de correo electrónico (hasta
+        cuatro equipos en total). (ii) Suscripción Aplicaciones. Para uso
+        exclusivo de usted. La restricción de uso no comercial presente en el
+        Acuerdo de servicios de RANGERARB SoftwareLab no se aplica a los
+        usuarios que no adquirieron su suscripción al servicio/software. (iii)
+        Dispositivos registrados. Es posible que haya límites técnicos en el
+        número de dispositivos que un usuario puede registrar al mismo tiempo
+        para usar el servicio/software. (iv) Otros requisitos. Salvo según lo
+        permitido en virtud de la anterior cláusula 1.a(i), solo puede usar el
+        servicio/software una persona cada vez en cada dispositivo. Se puede
+        utilizar el software/servicio para actividades comerciales, tanto si
+        generan ingresos como si son no lucrativas. Se otorga una licencia para
+        los componentes del software como una única unidad, por lo que usted no
+        podrá separar ni virtualizar los componentes ni instalarlos en
+        dispositivos diferentes. Excepto por el uso permitido que se describe en
+        el apartado posterior “Acceso remoto”, esta licencia corresponde a un
+        uso directo del software únicamente a través de mecanismos de entrada de
+        un dispositivo, como un teclado, un ratón o una pantalla táctil. Se
+        prohíbe expresamente la instalación del software en un servidor para su
+        uso mediante otros dispositivos conectados al servidor a través de una
+        red interna o externa, así como los servicios de hosting de carácter
+        comercial. Para obtener más información sobre los diversos escenarios de
+        usuario y la virtualización, consulte a continuación la cláusula 1.d. b.
+        Periodo de suscripción/Plazo de licencia. Su derecho a utilizar el
+        servicio/software se limita al periodo de suscripción. Puede tener la
+        opción de ampliar la suscripción. Si amplía la suscripción, podrá seguir
+        utilizando el servicio/software hasta que finalice el período de
+        suscripción ampliado. Para obtener información acerca de la suscripción,
+        consulte las pantallas de activación del software u otros materiales
+        proporcionados con el mismo. Al caducar el período de suscripción,
+        dejarán de funcionar casi todas las características del software y del
+        servicio. c. Activación. (i) Cómo funciona. La activación asocia el uso
+        del servicio/software a un dispositivo específico. La activación es
+        necesaria por cada dispositivo para el cual se cede la licencia de
+        software. Durante la activación, el software contactará automáticamente
+        con RANGERARB SoftwareLab para confirmar que la licencia se asocia a ese
+        dispositivo. Como la activación tiene por objeto identificar cambios no
+        autorizados en la cesión de licencia o en las funciones de activación
+        del software, y con el fin, en general, de impedir el uso sin licencia
+        del software, no tiene derecho a utilizar el servicio/software tras el
+        plazo concedido para la activación y no podrá eludir ni evitar la
+        activación. Si no ha introducido una clave de producto durante el plazo
+        concedido para la activación inicial, dejarán de ejecutarse la mayoría
+        de funciones del servicio y del software. (ii) Conexión a Aplicaciones.
+        Para obtener más información sobre la activación, consulte
+        info@rangerarbsoftwarelab.com. Si el dispositivo está conectado a
+        Internet, el software se conectará automáticamente con RANGERARB
+        SoftwareLab para llevar a cabo la activación. También puede activar el
+        software manualmente a través de Internet. (iii) Reactivación. Ciertos
+        cambios en los componentes de su dispositivo o en el software pueden
+        requerir la reactivación del software. (iv) Error de activación. Durante
+        la activación online, si la cesión de licencia o las funciones de
+        activación del software resultaran ser falsificadas o con licencia
+        obtenida de forma indebida, la activación no se completará. El software
+        le notificará si la copia instalada del software tiene una licencia
+        cedida de forma incorrecta. Además, recibirá recordatorios para obtener
+        una copia con licencia adecuada del software. d. Escenarios de múltiples
+        usos. (i) Dispositivo. En este contrato, “dispositivo” hace referencia a
+        un sistema de hardware informático (físico o virtual) con un dispositivo
+        de almacenamiento o un dispositivo móvil capaz de ejecutar el software.
+        Una partición o división de hardware se considera un dispositivo. (ii)
+        Conexiones múltiples o agrupadas. No podrá utilizar hardware ni software
+        para multiplicar o agrupar conexiones, ni en general para que múltiples
+        usuarios o múltiples dispositivos puedan acceder o utilizar el software
+        indirectamente a través de un dispositivo. (iii) Uso en un entorno
+        virtualizado. Si utiliza un software de virtualización, incluido el
+        cliente hyper-v, para crear uno o más dispositivos virtuales en un solo
+        sistema de hardware informático, cada dispositivo virtual, así como el
+        dispositivo físico, se considerará un dispositivo independiente a
+        efectos de este contrato. La licencia le permite instalar únicamente una
+        copia del software para su uso en cada uno de los dispositivos, con
+        arreglo a los derechos de uso y de instalación arriba indicados, tanto
+        si el dispositivo es físico como virtual. Si desea virtualizar el
+        software, debe obtener copias independientes del software y una licencia
+        por separado de cada copia. El contenido protegido por tecnología de
+        gestión de derechos digitales y demás tecnologías de cifrado de disco
+        duro de volumen entero podría resultar menos seguro en un entorno
+        virtualizado. (iv) Acceso remoto: De modo excepcional, podrá autorizar a
+        otros a que accedan al software instalado en sus dispositivos de forma
+        remota y simultáneamente desde otro dispositivo, únicamente con el fin
+        de proporcionarle asistencia técnica. 2. Restricciones y requisitos
+        adicionales de cesión de licencia. c. Home Use Program. Para poder
+        suscribir y utilizar el servicio/software denominado “Home Use Program”
+        (Programa de Uso en el Hogar), deberá ser un “Usuario de Home Use
+        Program”. Para ser un Usuario de Home Use Program, debe ser empleado de
+        una organización que tenga un contrato de licencias por volumen con
+        RANGERARB SoftwareLab o que haya tenido anteriormente un Software
+        Assurance o cumpla ciertos otros criterios. Mientras cumpla los
+        requisitos de aptitud de Usuario de Home Use Program, podrá suscribir y
+        utilizar el servicio/software con fines comerciales. Si tiene alguna
+        pregunta sobre si es usted susceptible de considerarse Usuario de Home
+        Use Program, contacte con su empresa. d. Componentes de fuente. Cuando
+        el software se ejecute, usted puede utilizar sus fuentes para mostrar e
+        imprimir contenido. Puede descargar temporalmente las fuentes en una
+        impresora u otro dispositivo de salida para imprimir contenido, y podrá
+        integrar fuentes en el contenido únicamente según lo permitido por las
+        restricciones de integración que presenten las fuentes. 3. Reserva de
+        Derechos y Comentarios. Salvo que se disponga expresamente en este
+        Contrato, RANGERARB SoftwareLab no le concede una licencia ni otros
+        derechos de ningún tipo en virtud de ningún conocimiento, patente,
+        propiedad intelectual, secreto empresarial, marca comercial u otra
+        propiedad intelectual e industrial que sea propiedad de RANGERARB
+        SoftwareLab o esté bajo su control o el de una entidad relacionada,
+        incluidos, sin limitación, los nombres, la imagen de marca, el logotipo
+        o equivalentes. Al presentar a RANGERARB SoftwareLab cualquier idea,
+        propuesta, sugerencia o comentario, incluyendo, sin limitación, ideas de
+        nuevos productos, tecnologías, promociones, así como nombres,
+        comentarios y mejoras de productos (“Comentarios”), proporciona a
+        RANGERARB SoftwareLab, sin cargo, regalías ni otras obligaciones con
+        usted, el derecho de realizar, haber realizado, crear trabajos
+        derivados, utilizar, compartir y comercializar sus Comentarios de
+        cualquier forma y con cualquier fin. No proporcionará Comentarios que
+        estén sujetos a una licencia que obligue a RANGERARB SoftwareLab a
+        conceder bajo licencia su software, tecnología o documentación a
+        terceros porque RANGERARB SoftwareLab incluya sus comentarios en estos.
+        4. Contrato completo. Este Suplemento (junto con los términos que
+        acompañen a todo suplemento, actualización y servicios del software y
+        que RANGERARB SoftwareLab disponga y usted utilice, así como toda
+        licencia independiente que pueda presentarse al instalar y utilizar el
+        software en un dispositivo) y los términos contenidos en los enlaces web
+        señalados en este Suplemento constituyen el contrato completo
+        correspondiente al servicio y al software, así como a cualesquiera
+        suplementos, actualizaciones y servicios (a menos que RANGERARB
+        SoftwareLab disponga otros términos con tales suplementos,
+        actualizaciones o servicios). Puede revisar este Suplemento una vez se
+        ejecute su software accediendo a la pantalla de Ayuda del software y
+        haciendo clic en el enlace de Términos de licencia del software de
+        RANGERARB SoftwareLab. También puede revisar los términos en cualquiera
+        de los vínculos incluidos en este contrato ingresando las direcciones
+        URL en la barra de direcciones del explorador, y acepta hacerlo. Usted
+        entiende que al usar el servicio, acepta este Suplemento y los términos
+        a él vinculados. También existen enlaces informativos en este contrato.
+        Los enlaces que contienen términos vinculantes para usted y nosotros son
+        los siguientes: · Contrato de servicios de RANGERARB SoftwareLab. ·
+        Declaración de privacidad de RANGERARB SoftwareLab.
+      </p>
+      <div class="autor">Autor: Rangerarbsoft</div>
+    </div>
+    <!---------------------------------------------->
+    <!--Aqui comienza contenedor de Cotización -->
+    <!---------------------------------------------->
+
+    <div class="container-cotizacion">
+      <h1 class="titulo-cotizacion">$ Cotizacion Dolar - Euro E</h1>
+      <div class="container-dolar">
+        <a class="cont-dolar" href=""
+          ><span class="value data-venta"></span>"></a
+        >
+        <p class="parr-dolar">Cotización Dolar</p>
+      </div>
+
+      <div class="container-euro">
+        <a class="cont-euro" href=""
+          ><span class="value data-venta"></span>"></a
+        >
+        <p class="parr-euro">Cotización Euro</p>
+      </div>
+    </div>
+    <!----------------------------------------->
+    <!--Aqui comienza contenedor de GastroRest -->
+    <!----------------------------------------->
+
+    <div class="contenedor-gastrorest">
+      <div class="container-linea-uno">
+        <img
+          class="gastrorest"
+          id="img-uno"
+          src="Imagenes/SplashGastroRest.png"
+        />
+        <p class="descripcion-gastrorest">
+          " Esta Aplicación está diseñada y orientada para la Gestión de
+          Negocios en rubro Gastronomía aplicable a Restaurantes, Comedores,
+          Bares, Locales de Comoda Rápida, etc. Su versatilidad le permite la
+          inserción de pedidos permanentes en distintas Mesas con el Control de
+          salida de los mismos desde Producción, control de Servicios de Mozos,
+          Evaluación de Ventas en cantidad y cotizaciones de los diferentes
+          platos, Total de Venta Diaria, Semanal Quincenal, etc. Sistema de
+          Cobro por Ticket, Facturas "A", "B", "C", diferentes tipos de Tarjetas
+          de Débito y Crédito, Reportes finales de venta, Estructura con Bases
+          de Datos Para inserción de Personal, Proveedores, Compras de Insumos
+          con operaciones autométicas de descuento en el Inventario de Stock,
+          Registro de venta por cuenta corriente y Clientes especiales, etc.
+          Aplicable para Dispositivos Smart, PC de Escritorio, Portátiles Laptop
+          o Netbook, Tablet o dispositivos móviles(Teléfonos). La Suscripción
+          para la Aplicación AgroQuimicaSolución es por el término de Dos(2)
+          años, luego renovación anual.
+        </p>
+      </div>
+      <div class="container-linea-dos">
+        <p class="costo-gastrorest">Importe: GastroRest</p>
+        <div class="container-importe">
+          <p class="importe-gastrorest">90.000</p>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------->
+    <!--Aqui comienza contenedor de AppContratoAlquiler -->
+    <!---------------------------------------------------->
+    <div class="contenedor-appcontrato-alquiler">
+      <div class="container-linea-dos">
+        <img
+          class="appcontrato"
+          id="img-uno"
+          src="Imagenes\ContratoAlquiler150.jpg"
+        />
+        <p class="descripcion-appcontrato">
+          " Esta Aplicación está diseñada y orientada para la Gestión de
+          Negocios en rubro Inmobiliaria aplicable a Edificios, Departamentos,
+          Casas, Galpones, Terrenos,etc. Su versatilidad le permite la inserción
+          de información de Personas, Garantes Inmuebles en alquiler, Formas de
+          Pago, etc. Toda información ingresada en Estructura de Base de Datos
+          para la devolución de los mismos en tiempo y forma requeridos, como la
+          Inserción, Edición y Eliminación de Datos con comprobador de Usuario
+          Administrador de la Aplicación. Aplicable para Dispositivos Smart, PC
+          de Escritorio, Portátiles Laptop o Netbook, Tablet o dispositivos
+          móviles(Teléfonos). La Suscripción para la Aplicación
+          AgroQuimicaSolución es por el término de Dos(2) años, luego renovación
+          anual.
+        </p>
+      </div>
+      <div class="container-linea-tres">
+        <p class="costo-appcontrato">Importe: AppContratoAlquiler</p>
+        <div class="container-importe-appcontrato">
+          <p class="importe-appcontrato">90.000</p>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------->
+    <!--Aqui comienza contenedor de AppTABACO -->
+    <!---------------------------------------------------->
+    <div class="contenedor-app-tabaco">
+      <div class="container-linea-dos">
+        <img class="apptabaco" id="img-uno" src="Imagenes\AppTABACO.png" />
+        <p class="descripcion-app-tabaco">
+          " Esta Aplicación está diseñada y orientada para la Gestión de Cultivo
+          y Cosecha de la Producción de Tabaco, en el que podrá llevar Registro
+          (Gastos y Recupero) de los Insumos (semillas, Productos Agroquímicos,
+          Combustibles, Herramientas manuales, Herramientas de tracción,
+          Elementos para personal, etc), ingreso y egreso de personal en sus
+          distintas tareas, tiempo trabajado. Su versatilidad le permite la
+          inserción de información de Personal y todo lo demás anteriormente
+          mencionado. Toda información ingresada en Estructura de Base de Datos
+          para la devolución de los mismos en tiempo y forma requeridos, como la
+          Inserción, Edición y Eliminación de Datos con comprobador de Usuario
+          Administrador de la Aplicación. Aplicable para Dispositivos Smart, PC
+          de Escritorio, Portátiles Laptop o Netbook, Tablet o dispositivos
+          móviles(Teléfonos). La Suscripción para la Aplicación
+          AgroQuimicaSolución es por el término de Dos(2) años, luego renovación
+          anual.
+        </p>
+      </div>
+      <div class="container-linea-tres">
+        <p class="costo-app-tabaco">Importe: AppTABACO</p>
+        <div class="container-importe-app-tabaco">
+          <p class="importe-app-tabaco">90.000</p>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------->
+    <!--Aqui comienza contenedor de AgroQuimicaSolutions -->
+    <!---------------------------------------------------->
+    <div class="contenedor-agroquimica">
+      <div class="container-linea-dos">
+        <img
+          class="agroquimica"
+          id="img-uno"
+          src="Imagenes\LogotipoAroQuimicaSolutions.png"
+        />
+        <p class="descripcion-agroquimica">
+          " Esta Aplicación está diseñada y orientada para la Gestión Comercial
+          de Compra, Venta e Intercambio de Productos Agroquímicos de uso normal
+          vigente en las diferentes producciones agrícolas y hortícolas más
+          agregado el de Productos de engorde en animales de campo, een sus
+          diferentes tipos, como así también para animales domésticos, como
+          perros, gatos, aves, etc., en el que podrá llevar Registro (Gastos y
+          Recupero) de los Insumos (semillas, Productos Agroquímicos, Alimentos
+          varios, etc), ingreso y egreso de personal en sus distintas tareas,
+          tiempo trabajado. Su versatilidad le permite la inserción de
+          información de Personal y todo lo demás anteriormente mencionado. Toda
+          información ingresada en Estructura de Base de Datos para la
+          devolución de los mismos en tiempo y forma requeridos, como la
+          Inserción, Edición y Eliminación de Datos con comprobador de Usuario
+          Administrador de la Aplicación. Aplicable para Dispositivos Smart, PC
+          de Escritorio, Portátiles Laptop o Netbook, Tablet o dispositivos
+          móviles(Teléfonos). La Suscripción para la Aplicación
+          AgroQuimicaSolución es por el término de Dos(2) años, luego renovación
+          anual.
+        </p>
+      </div>
+      <div class="container-linea-tres">
+        <p class="costo-agroquimica">Importe: AgroQuímicaSolutions</p>
+        <div class="container-importe-agroquimica">
+          <p class="importe-agroquimica">90.000</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Profesionales-Sianca-Valley -->
+    <!------------------------------------------------------------>
+
+    <div class="contenedor-profesionales">
+      <div class="container-linea-dos">
+        <img
+          class="profesionales"
+          id="img-uno"
+          src="Imagenes\SublimeText.png"
+        />
+        <p class="descripcion-profesionales">
+          " Esta Aplicación está diseñada y orientada para un Uso Social
+          determinado, que consiste en la difusión de tareas, trabajos y
+          estudios e investigación en forma Profesional, teniendo la posibilidad
+          de la publicación de Fotos, Videos y escritos serios sobre lo mismo,
+          para difundir todo lo considerado bueno, valedero y fehaciente para
+          nuestra Sociedad. Esta aplicación cuenta con un Algoritmo de
+          verificación y evaluación de las publicaciones, para dejar las mismas
+          o retirarlas cuando considere su contenido ofensivo o dañino a
+          terceras personas con acceso a esta Aplicación. Se deja aclarado que
+          la Aplicación mencionada (Profesionales-Sianca-Valley) es de libre
+          acceso al público en general(excepto menores de edad) y las únicas
+          personas con posibilidad de publicación serán Profesionales de las
+          diferentes Áreas debidamente acreditados como tal ante esta
+          Aplicación, que será verificada yfehacientemente ante de dar su
+          Aprobación. Toda información ingresada en Estructura de Base de Datos
+          para la devolución de los mismos en tiempo y forma requeridos, como la
+          Inserción, Edición y Eliminación de Datos con comprobador de Usuario
+          Administrador de la Aplicación. Aplicable para Dispositivos Smart, PC
+          de Escritorio, Portátiles Laptop o Netbook, Tablet o dispositivos
+          móviles(Teléfonos). La Suscripción para la Aplicación
+          Profesionales-Sianca-Valley es por el término de Uno(1) año, luego
+          renovación anual.
+        </p>
+      </div>
+      <div class="container-linea-tres">
+        <p class="costo-profesionales">Importe: Profesionales-Sianca-Valley</p>
+        <div class="container-importe-profesionales">
+          <p class="importe-profesionales">70.000</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de RangerarbsoftDisk -->
+    <!------------------------------------------------------------>
+    <div class="contenedor-rangerarbsoftdisk">
+      <div class="container-linea-dos">
+        <img
+          class="rangerarbsoftdisk"
+          id="img-uno"
+          src="Imagenes\Setting.png"
+        />
+        <p class="descripcion-rangerarbsoftdisk">
+          " RECUPERACIÓN DE ARCHIVOS - Esta Aplicación está diseñada y orientada
+          para la ejecución de un Sistema de Recuperación de Archivos de Fotos e
+          Imágenes(.jpg, .png, .asv, .ico, etc), Archivos de texto(.docs, .txt,
+          ,asv, etc), Aplicaciones de Terceros(archivos de Google, Microsoft,
+          Firefox, Opera, etc) y archivos varios. Este proceso realiza la
+          extracción desde Unidades de Almacenamiento como ser Disco HDD, Disco
+          SSD, Disco DVD, y Pentdrive de distintas capacidades. El formato de
+          acuerdo es, comunicarse por teléfono con Rangerarbsoft para determinar
+          el trabajo a realizar, la forma de ingresar la Unidad y el tiempo de
+          recuperación, una vez acordado, por este medio se tiene que Suscribir
+          por medio de un Formulario al 'Clickear' en el Botón Comprar, llenar
+          los Datos requeridos para poder Activar el Sistema. Se deja constancia
+          que la Recuperación de Datos se realizará sobre Unidades Dañadas y/o
+          Corrompidas, no así de Unidades Rotas o destruídas. Aplicable para
+          Dispositivos Smart, PC de Escritorio, Portátiles Laptop o Netbook,
+          Tablet o dispositivos móviles(Teléfonos). La Suscripción para la
+          Recuperación de Archivos es por el término del tiempo de extracción
+          que llevará el mismo.
+        </p>
+      </div>
+      <div class="container-linea-tres">
+        <p class="costo-rangerarbsoftdisk">Importe: RangerarbDisk</p>
+        <div class="container-importe-rangerarbsoftdisk">
+          <p class="importe-rangerarbsoftdisk">150.000</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video GastroRest -->
+    <!------------------------------------------------------------>
+    <div class="container-video-gastrorest">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-uno">Video GastroRest</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video AppContratoAlquiler -->
+    <!------------------------------------------------------------>
+
+    <div class="container-video-appcontrato">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-dos">Video AppContratoAlquiler</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video AppTABACO -->
+    <!------------------------------------------------------------>
+    <div class="container-video-apptabaco">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-tres">Video AppTABACO</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video AgroQuimicaSolutions -->
+    <!------------------------------------------------------------>
+    <div class="container-video-agroquimica">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-cuatro">Video AgroQuimicaSolutions</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!------------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video Profesionales-Sianca-Valley -->
+    <!------------------------------------------------------------------>
+    <div class="container-video-profesionales">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-cinco">Video Profesionales-Sianca-Valley</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!--Aqui comienza contenedor de Video RangerarbsoftDisk -->
+    <!------------------------------------------------------------>
+    <div class="container-video-rangerarbsoftdisk">
+      <div class="container-linea-uno">
+        <h1 class="titulo-video-seis">Video RangerarbsoftDisk</h1>
+        <video controls>
+          <source src="Videos/VideoAppTABACO.mp4" type="video/mp4" />
+          <source src="Videos/VideoAppTABACO.mp3" type="video/mp3" />
+          <source src="Videos/VideoAppTABACO.ogv" type="video/ogg" />
+          <source src="Videos/VideoAppTABACO.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+    <!----------------------------------------------------->
+    <!-- Aqui comienza el Formulario de Suscripción -->
+    <!----------------------------------------------------->
+    <div class="container-form-suscrip">
+      <form
+        action="registrar.php"
+        method="post"
+        class="form-reg"
+        onsubmit="return validar()"
+      >
+        <h4 class="registro-reg">REGISTRARSE</h4>
+        <input
+          type="text"
+          id="nombreProducto"
+          name="producto"
+          placeholder="Escribir Nombre Producto"
+          value=""
+          class="input-100"
+          required
+        />
+        <input
+          type="text"
+          id="nombres"
+          name="nombre"
+          placeholder="Nombre Usuario"
+          value=""
+          class="input-48"
+          onkeypress="return soloLetras(event)"
+          required
+        />
+        <input
+          type="text"
+          id="apellidos"
+          name="apellido"
+          placeholder="Apellido Usuario"
+          value=""
+          class="input-48"
+          onkeypress="return soloLetras(event)"
+          required
+        />
+        <input
+          type="document"
+          id="dni"
+          name="dni"
+          placeholder="N° Documento Usuario"
+          value=""
+          class="input-8"
+          onkeypress="return soloNumeros(event)"
+          pattern=".{8,8}"
+          required
+        />
+        <input
+          type="text"
+          id="domicilio"
+          name="domicilio"
+          placeholder="Domicilio Usuario"
+          value=""
+          class="input-50"
+          required
+        />
+        <input
+          type="telefono"
+          id="telefono"
+          name="telefono"
+          placeholder="Telefono Usuario"
+          value=""
+          class="input-10"
+          onkeypress="return soloNumeros(event)"
+          pattern=".{10,11}"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Usuario"
+          value=""
+          class="input-108"
+          required
+        />
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          placeholder="Ingrese una contraseña"
+          value=""
+          class="input-48"
+          required
+        />
+        <input
+          type="submit"
+          id="registrar"
+          value="Registrar"
+          name="registrar-user"
+          class="btn-enviar"
+        />
+      </form>
+    </div>
+    <!------------------------------------------------->
+    <!-- Aqui comienza el Formulario de Validación -->
+    <!------------------------------------------------>
+    <form
+      action=""
+      method="POST"
+      class="form-validar"
+      onsubmit="return validar();"
+    >
+      <div class="container-form-dos">
+        <h4 class="validar-password">VALIDAR USUARIO</h4>
+        <div class="container-input4">
+          <input
+            type="email"
+            id="email1"
+            name="email"
+            placeholder="Email"
+            value=""
+            class="input-108"
+            required
+          />
+          <input
+            type="password"
+            id="pass1"
+            name="password"
+            placeholder="CONTRASEÑA"
+            value=""
+            class="input-48"
+          />
+          <input
+            type="submit"
+            id="validar"
+            name="VALIDAR"
+            value="VALIDAR"
+            class="btn-enviar"
+            required
+          />
+          <input
+            type="submit"
+            id="validar-pass"
+            value="Olvidaste tu contraseña..?"
+            value=""
+            class="btn-enviar"
+          />
+        </div>
+      </div>
+    </form>
+    <!---------------------------------------------------->
+    <!-- Aqui comienza el formulario de Enviar Codigo -->
+    <!---------------------------------------------------->
+    <form
+      action=""
+      method="POST"
+      class="form-enviar-codigo"
+      onsubmit="return validar();"
+    >
+      <div class="container-form-tres">
+        <h4 id="validar-codigo">RECIBIR CODIGO</h4>
+        <p>
+          Fué enviado a tu correo Email un codigo de 6 digitos que debes
+          ingresar en la casilla siguiente para recuperar contraseña. Si no lo
+          ves, revisa en spam o correos 'No deseados'.-
+        </p>
+        <input
+          type="codigo"
+          id="val-cod"
+          name="codigo"
+          placeholder="Ingresa codigo recuperacion"
+          value=""
+          class="input-10"
+        />
+        <input
+          type="submit"
+          id="enviar-codigo"
+          name="Enviar Codigo"
+          value="ENVIAR CODIGO"
+          class="btn-enviar"
+          onclick="mostrarRecupPass()"
+        />
+      </div>
+    </form>
+    <!--------------------------------------------------------------------->
+    <!-- Aqui comienza el Formulario de Recuperación de Contraseña -->
+    <!--------------------------------------------------------------------->
+    <form
+      action=""
+      method="POST"
+      class="form-recup-password"
+      onsubmit="return validar();"
+    >
+      <div class="container-form-dos">
+        <h4 class="recuperar-password">VALIDAR PASSWORD</h4>
+        <div class="container-input4">
+          <input
+            type="email"
+            id="email-uno"
+            name="email"
+            placeholder="INGRESE EMAIL"
+            value=""
+            class="input-108"
+            required
+          />
+          <input
+            type="password"
+            id="recup-pass1"
+            name="password"
+            placeholder="NUEVA CONTRASEÑA"
+            value=""
+            class="input-48"
+            required=""
+          />
+          <input
+            type="password"
+            id="recup-pass2"
+            name="password"
+            placeholder=" REPETIR NUEVA CONTRASEÑA"
+            value=""
+            class="input-48"
+            required=""
+          />
+          <input
+            type="submit"
+            id="recup-validar"
+            name="VALIDAR"
+            value="VALIDAR"
+            class="btn-enviar"
+            required
+          />
+        </div>
+      </div>
+    </form>
+
+    <script src="estilos.js"></script>
+  </body>
+</html>
+
